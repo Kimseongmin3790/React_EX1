@@ -5,11 +5,11 @@ function EffectEx() {
     let list = [];
     useEffect(()=>{
         fetch("http://localhost:3010/product")
-                    .then( res => res.json() )
-                    .then( data => {
-                        list = data.list;
-                        console.log(list);
-                    } )
+        .then( res => res.json() )
+        .then( data => {
+            list = data.list;
+            console.log(list);
+        } )
 
     })
 
